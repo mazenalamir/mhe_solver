@@ -1,4 +1,6 @@
-# A python module for nonlinear moving horizon estimation
+# mhe_solver
+
+## A python module for nonlinear moving horizon estimation
 
 This module implements the moving hozion estimation algorithm as described in the author's book:
 
