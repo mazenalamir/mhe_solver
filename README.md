@@ -25,6 +25,24 @@ The repository contains the following files:
 - `user_defined_reactor.py`: An example of user-defined files that contained the only required information from the user.
 - `notebook_reactor.ipynb`: A jupyter notebook containing the use-case on the previous user-defined example.
 
-## Example of user-defined python file 
+## Hints 
+
+Notice that the module is defined for controlled system. However it can be used for autonomous systems provided that some fictitious input is defined as it is shown in the use-case defined in `user_defined_reactor.py` and `notebook_reactor.ipynb` files. The following excerpts highlights the used *tricks*:
+
+
+
+## How to cite the algorithms 
+
+```
+@Inbook{Alamir2025,
+title="Nonlinear Moving-Horizon Extended Observers",
+bookTitle="Nonlinear Control of Uncertain Systems: Conventional and Learning-Based Alternatives with python",
+year="2025",
+publisher="Springer-Nature",
+isbn="ISBN-13-978-3031932861"
+}
+
+```
+
 
 
