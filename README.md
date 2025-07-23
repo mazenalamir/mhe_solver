@@ -27,12 +27,24 @@ The repository contains the following files:
 
 ## Hints 
 
-Notice that the module is defined for controlled system. However it can be used for autonomous systems provided that some fictitious input is defined as it is shown in the use-case defined in `user_defined_reactor.py` and `notebook_reactor.ipynb` files. The following excerpts highlights the used *tricks*:
+Notice that the module is defined for controlled system. However it can be used for autonomous systems provided that some fictitious input is defined as it is shown in the use-case defined in `user_defined_reactor.py` and `notebook_reactor.ipynb` files. The same holds for the presence of constraints for which the user-defined map should be defined. The following excerpts highlights the used *tricks*:
 
 ```python
+# from the user_defined_reactor.py file
+
 def u_reactor(y):
     return 0
+
+def c_reactor(x, u, p):
+    c = -1 
+    return c
 ```
+
+Notice how: 
+
+- The map `u_reactor` function defining how the input is extracted from the output is obviously dummy but sufficient to execture the estimation on non-controlled system.
+- The constraints map `c_reactor` defines an always satisfied scalar constraint. 
+
 
 ## How to cite the algorithms 
 
