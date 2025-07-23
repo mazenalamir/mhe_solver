@@ -29,7 +29,10 @@ The repository contains the following files:
 
 Notice that the module is defined for controlled system. However it can be used for autonomous systems provided that some fictitious input is defined as it is shown in the use-case defined in `user_defined_reactor.py` and `notebook_reactor.ipynb` files. The following excerpts highlights the used *tricks*:
 
-
+```python
+def u_reactor(y):
+    return 0
+```
 
 ## How to cite the algorithms 
 
